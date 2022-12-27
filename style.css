@@ -131,6 +131,8 @@ body {
   padding-bottom: 12px;
   font-size: 0.86em;
   opacity: 0.8;
+  text-align: center;
+  margin: 0 8px;
 }
 .menu form {
   width: 100%;
@@ -358,4 +360,8 @@ body {
   outline: none;
   user-select: none;
   font-family: 'Unbounded', cursive;
+}
+
+.music-controls.hide{
+  display: none;
 }

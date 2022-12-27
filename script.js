@@ -372,6 +372,8 @@ const appNodes = {
     longExposure: ".long-exposure",
     longExposureLabel: ".long-exposure-label",
 
+    musicControls: ".music-controls",
+
     // Help UI
     helpModal: ".help-modal",
     helpModalOverlay: ".help-modal__overlay",
@@ -404,6 +406,7 @@ function renderApp(state) {
     );
     appNodes.canvasContainer.classList.toggle("blur", state.menuOpen);
     appNodes.menu.classList.toggle("hide", !state.menuOpen);
+    appNodes.musicControls.classList.toggle("hide", state.menuOpen);
     appNodes.finaleModeFormOption.style.opacity = state.config.autoLaunch
         ? 1
         : 0.32;
@@ -2434,7 +2437,7 @@ document.body.addEventListener("click", function (e) {
 
 const LIST_SONG = [
 	{
-		name: 'Ngày Xuân Long Phụng Sum Vầy',
+		name: 'Ngày Xuân Long Phụng',
 		slug: 'ngay_xuan_long_phung_sum_vay'
 	},
 	{
