@@ -377,7 +377,8 @@ body {
   left: 0;
   right: 0;
   z-index: 10000;
-  background: rgba(0, 0, 0, 0.92);
+  /* background: rgba(0, 0, 0, 0.92); */
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(./bg-1.jpg) center center /cover no-repeat;
 }
 
 .countdown-timer .headline{
@@ -401,4 +402,10 @@ body {
   color: rgb(128, 128, 128);
   outline: none;
   width: 340px;
+}
+
+@media (max-width: 560px)  {
+  .countdown-timer{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(./bg-2.jpg) center center /cover no-repeat;
+  }
 }
