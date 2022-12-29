@@ -10,16 +10,8 @@
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="theme-color" content="#000000" />
-        <link
-            rel="shortcut icon"
-            type="image/png"
-            href="./logo.png"
-        />
-        <link
-            rel="icon"
-            type="image/png"
-            href="./logo.png"
-        />
+        <link rel="shortcut icon" type="image/png" href="./logo.png" />
+        <link rel="icon" type="image/png" href="./logo.png" />
         <meta name="msapplication-TileColor" content="#000000" />
         <meta
             name="msapplication-TileImage"
@@ -76,9 +68,22 @@
 
         <!-- App -->
         <div class="container">
+            <div class="countdown-timer">
+                <h1 id="headline">Chưa đến giờ, quay lại sau nhé!😄</h1>
+                <div id="countdown">
+                    <ul>
+                        <li><span id="days"></span>d</li>
+                        <li><span id="hours"></span>h</li>
+                        <li><span id="minutes"></span>p</li>
+                        <li><span id="seconds"></span>s</li>
+                    </ul>
+                </div>
+                <br>
+                <input class="preview-code" type="text" placeholder="Nhập mã xem trước ở đây...">
+            </div>
             <div class="loading-init">
-                <div class="loading-init__header">Loading</div>
-                <div class="loading-init__status">Assembling Shells</div>
+                <div class="loading-init__header">Đang tải</div>
+                <div class="loading-init__status">Chuẩn bị bắn pháo</div>
             </div>
             <div class="stage-container remove">
                 <div class="canvas-container">
@@ -123,7 +128,8 @@
                         </div>
                         <div class="menu__header">Cài đặt</div>
                         <div class="menu__subheader">
-                            Để biết thêm thông tin, hãy nhấp vào bất kỳ nhãn nào.
+                            Để biết thêm thông tin, hãy nhấp vào bất kỳ nhãn
+                            nào.
                         </div>
                         <form>
                             <div class="form-option form-option--select">
@@ -133,13 +139,13 @@
                                 <select class="shell-type"></select>
                             </div>
                             <div class="form-option form-option--select">
-                                <label class="shell-size-label"
-                                    >Cỡ Pháo</label
-                                >
+                                <label class="shell-size-label">Cỡ Pháo</label>
                                 <select class="shell-size"></select>
                             </div>
                             <div class="form-option form-option--select">
-                                <label class="quality-ui-label">Chất lượng</label>
+                                <label class="quality-ui-label"
+                                    >Chất lượng</label
+                                >
                                 <select class="quality-ui"></select>
                             </div>
                             <div class="form-option form-option--select">
@@ -153,9 +159,7 @@
                                 <select class="scaleFactor"></select>
                             </div>
                             <div class="form-option form-option--checkbox">
-                                <label class="auto-launch-label"
-                                    >Tự động</label
-                                >
+                                <label class="auto-launch-label">Tự động</label>
                                 <input class="auto-launch" type="checkbox" />
                             </div>
                             <div
@@ -189,9 +193,7 @@
                         </form>
                         <div class="credits">
                             Xậy dựng bởi
-                            <a href="" target="_blank"
-                                >Trung Phạm</a
-                            >.
+                            <a href="" target="_blank">Trung Phạm</a>.
                         </div>
                     </div>
                 </div>
@@ -207,16 +209,16 @@
                 </div>
             </div>
             <div class="music-controls">
-				<div class="icon"><i class='bx bx-play'></i></div>
-				<select class="songs"></select>
-				<audio src="./music/ngay_xuan_long_phung_sum_vay.mp3"></audio>
-			</div>
+                <div class="icon"><i class="bx bx-play"></i></div>
+                <select class="songs"></select>
+                <audio src="./music/ngay_xuan_long_phung_sum_vay.mp3"></audio>
+            </div>
         </div>
         <!-- partial -->
         <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/329180/fscreen%401.0.1.js"></script>
         <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/329180/Stage%400.1.4.js"></script>
         <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/329180/MyMath.js"></script>
-		<script src="https://cdn.jsdelivr.net/mojs/latest/mo.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/mojs/latest/mo.min.js"></script>
         <script src="./script.js"></script>
     </body>
 </html>

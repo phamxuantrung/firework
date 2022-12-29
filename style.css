@@ -365,3 +365,40 @@ body {
 .music-controls.hide{
   display: none;
 }
+
+.countdown-timer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+  background: rgba(0, 0, 0, 0.92);
+}
+
+.countdown-timer .headline{
+  text-align: center;
+  padding: 0 8px;
+}
+
+.countdown-timer ul{
+  display: flex;
+}
+
+.countdown-timer ul li{
+  margin: 8px;
+}
+
+.preview-code{
+  background-color: transparent;
+  border: 1px solid rgb(97, 97, 97);
+  border-radius: 4px;
+  padding: 8px 12px;
+  color: rgb(128, 128, 128);
+  outline: none;
+  width: 340px;
+}
