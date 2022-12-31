@@ -2469,8 +2469,8 @@ function main() {
             slug: "ngay_xuan_long_phung_sum_vay",
         },
         {
-            name: "Nhạc Xuân Remix",
-            slug: "nhac_xuan_remix",
+            name: "Làm Gì Phải Hốt",
+            slug: "lam_gi_phai_hot",
         },
         {
             name: "Bao Giờ Lấy Chồng",
@@ -2487,6 +2487,18 @@ function main() {
         {
             name: "Tết Này Con Sẽ Về",
             slug: "tet_nay_con_se_ve",
+        },
+        {
+            name: "Đi về nhà",
+            slug: "di_ve_nha",
+        },
+        {
+            name: "Tết Nhà Mình",
+            slug: "tet_nha_minh",
+        },
+        {
+            name: "Thế Là Tết",
+            slug: "the_la_tet",
         },
     ];
 
@@ -2589,7 +2601,7 @@ function main() {
 
 const previewCode = document.querySelector(".preview-code");
 previewCode.onchange = function () {
-    if (this.value.trim() == "ngocanhxinhgai") {
+    if (this.value.trim().toLowerCase() == "ngocanhxinhgai") {
         document.querySelector(".countdown-timer").style.display = "none";
         main();
     } else {
